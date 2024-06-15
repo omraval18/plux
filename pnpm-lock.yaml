@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@ai-sdk/openai':
     specifier: ^0.0.28
-    version: 0.0.28(zod@3.21.4)
+    version: 0.0.28(zod@3.23.8)
   '@hookform/resolvers':
     specifier: ^3.3.1
     version: 3.3.1(react-hook-form@7.46.2)
@@ -16,16 +16,16 @@ dependencies:
     version: 1.8.18(react-dom@18.2.0)(react@18.2.0)
   '@langchain/community':
     specifier: ^0.2.10
-    version: 0.2.10(@pinecone-database/pinecone@2.2.2)(openai@4.10.0)(pdf-parse@1.1.1)
+    version: 0.2.10(@pinecone-database/pinecone@2.2.2)(pdf-parse@1.1.1)
   '@langchain/groq':
     specifier: ^0.0.12
-    version: 0.0.12(langchain@0.0.153)(openai@4.10.0)
+    version: 0.0.12(langchain@0.0.153)
   '@langchain/mistralai':
     specifier: ^0.0.24
-    version: 0.0.24(langchain@0.0.153)(openai@4.10.0)
+    version: 0.0.24(langchain@0.0.153)
   '@langchain/pinecone':
     specifier: ^0.0.7
-    version: 0.0.7(langchain@0.0.153)(openai@4.10.0)
+    version: 0.0.7(langchain@0.0.153)
   '@mantine/hooks':
     specifier: ^7.0.1
     version: 7.0.1(react@18.2.0)
@@ -88,7 +88,7 @@ dependencies:
     version: 6.6.0(next@13.5.2)(react@18.2.0)(solid-js@1.8.17)(svelte@4.2.18)(uploadthing@6.12.0)(vue@3.4.27)
   ai:
     specifier: ^3.1.35
-    version: 3.1.35(openai@4.10.0)(react@18.2.0)(solid-js@1.8.17)(svelte@4.2.18)(vue@3.4.27)(zod@3.21.4)
+    version: 3.1.35(react@18.2.0)(solid-js@1.8.17)(svelte@4.2.18)(vue@3.4.27)(zod@3.23.8)
   autoprefixer:
     specifier: 10.4.16
     version: 10.4.16(postcss@8.4.30)
@@ -125,9 +125,6 @@ dependencies:
   next-themes:
     specifier: ^0.3.0
     version: 0.3.0(react-dom@18.2.0)(react@18.2.0)
-  openai:
-    specifier: ^4.10.0
-    version: 4.10.0
   pdf-parse:
     specifier: ^1.1.1
     version: 1.1.1
@@ -201,8 +198,8 @@ dependencies:
     specifier: ^6.12.0
     version: 6.12.0(next@13.5.2)(tailwindcss@3.3.3)
   zod:
-    specifier: ^3.21.4
-    version: 3.21.4
+    specifier: ^3.23.8
+    version: 3.23.8
 
 packages:
 
@@ -211,18 +208,18 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /@ai-sdk/openai@0.0.28(zod@3.21.4):
+  /@ai-sdk/openai@0.0.28(zod@3.23.8):
     resolution: {integrity: sha512-1rVwdaIIy6TDB29IAp8qcu7JmkfQ9Y5LqtFDyCu8fQgaVcAllKffmCuVBoKhti8LwcnDlafVZDCdzXajWnTJYA==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.0.0
     dependencies:
       '@ai-sdk/provider': 0.0.10
-      '@ai-sdk/provider-utils': 0.0.13(zod@3.21.4)
-      zod: 3.21.4
+      '@ai-sdk/provider-utils': 0.0.13(zod@3.23.8)
+      zod: 3.23.8
     dev: false
 
-  /@ai-sdk/provider-utils@0.0.13(zod@3.21.4):
+  /@ai-sdk/provider-utils@0.0.13(zod@3.23.8):
     resolution: {integrity: sha512-cB2dPm9flj+yin5sjBLFcXdW8sZtAXLE/OLKgz9uHpHM55s7mnwZrDGfO6ot/ukHTxDDJunZLW7qSjgK/u0F1g==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -235,7 +232,7 @@ packages:
       eventsource-parser: 1.1.2
       nanoid: 3.3.6
       secure-json-parse: 2.7.0
-      zod: 3.21.4
+      zod: 3.23.8
     dev: false
 
   /@ai-sdk/provider@0.0.10:
@@ -245,7 +242,7 @@ packages:
       json-schema: 0.4.0
     dev: false
 
-  /@ai-sdk/react@0.0.1(react@18.2.0)(zod@3.21.4):
+  /@ai-sdk/react@0.0.1(react@18.2.0)(zod@3.23.8):
     resolution: {integrity: sha512-y6KXzxRR7vmAgDVnS/hnLPt3RztvWOisANBw47O1o1D2nDeUqTo8E/SNw2J8mzzlRInGaw40EREY8jEf9AcwWQ==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -254,15 +251,15 @@ packages:
       react:
         optional: true
     dependencies:
-      '@ai-sdk/provider-utils': 0.0.13(zod@3.21.4)
-      '@ai-sdk/ui-utils': 0.0.1(zod@3.21.4)
+      '@ai-sdk/provider-utils': 0.0.13(zod@3.23.8)
+      '@ai-sdk/ui-utils': 0.0.1(zod@3.23.8)
       react: 18.2.0
       swr: 2.2.0(react@18.2.0)
     transitivePeerDependencies:
       - zod
     dev: false
 
-  /@ai-sdk/solid@0.0.1(solid-js@1.8.17)(zod@3.21.4):
+  /@ai-sdk/solid@0.0.1(solid-js@1.8.17)(zod@3.23.8):
     resolution: {integrity: sha512-5WWdoqpemYW66rMZUYF4sbDtZfF96Vt8RtrzpLv+95ZUM1nY1elxAWpHCeOyYEjWJE5+eiKpUs6Jr5mP2/gz8Q==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -271,7 +268,7 @@ packages:
       solid-js:
         optional: true
     dependencies:
-      '@ai-sdk/ui-utils': 0.0.1(zod@3.21.4)
+      '@ai-sdk/ui-utils': 0.0.1(zod@3.23.8)
       solid-js: 1.8.17
       solid-swr-store: 0.10.7(solid-js@1.8.17)(swr-store@0.10.6)
       swr-store: 0.10.6
@@ -279,7 +276,7 @@ packages:
       - zod
     dev: false
 
-  /@ai-sdk/svelte@0.0.1(svelte@4.2.18)(zod@3.21.4):
+  /@ai-sdk/svelte@0.0.1(svelte@4.2.18)(zod@3.23.8):
     resolution: {integrity: sha512-bpjTLKOwdcXjJzboq15etT1hdnRI1ErPZweWSsu1/LJlEFzD1M0qpZQwWHwPquYkzeppXOgsLrUZ+9D2RoC47Q==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -288,24 +285,24 @@ packages:
       svelte:
         optional: true
     dependencies:
-      '@ai-sdk/provider-utils': 0.0.13(zod@3.21.4)
-      '@ai-sdk/ui-utils': 0.0.1(zod@3.21.4)
+      '@ai-sdk/provider-utils': 0.0.13(zod@3.23.8)
+      '@ai-sdk/ui-utils': 0.0.1(zod@3.23.8)
       sswr: 2.1.0(svelte@4.2.18)
       svelte: 4.2.18
     transitivePeerDependencies:
       - zod
     dev: false
 
-  /@ai-sdk/ui-utils@0.0.1(zod@3.21.4):
+  /@ai-sdk/ui-utils@0.0.1(zod@3.23.8):
     resolution: {integrity: sha512-zOr1zIw/EH4fEQvDKsqYG3wY7GW32h8Wrx0lQpSAP59UCA4zgHBH6ogF5oj7+LUuWjT6be9S0G3l/tEPyRyxEw==}
     engines: {node: '>=18'}
     dependencies:
-      '@ai-sdk/provider-utils': 0.0.13(zod@3.21.4)
+      '@ai-sdk/provider-utils': 0.0.13(zod@3.23.8)
     transitivePeerDependencies:
       - zod
     dev: false
 
-  /@ai-sdk/vue@0.0.1(vue@3.4.27)(zod@3.21.4):
+  /@ai-sdk/vue@0.0.1(vue@3.4.27)(zod@3.23.8):
     resolution: {integrity: sha512-B3qAW22FYGy1ltobnF7LiPAmARTrCkH15qjw4WAXCnvRohsYOFTDACOBEsXRfa1OHmqWsUOYeNtE/oPhK3ybqw==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -314,7 +311,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@ai-sdk/ui-utils': 0.0.1(zod@3.21.4)
+      '@ai-sdk/ui-utils': 0.0.1(zod@3.23.8)
       swrv: 1.0.4(vue@3.4.27)
       vue: 3.4.27(typescript@5.2.2)
     transitivePeerDependencies:
@@ -589,7 +586,7 @@ packages:
       - supports-color
     dev: false
 
-  /@langchain/community@0.2.10(@pinecone-database/pinecone@2.2.2)(openai@4.10.0)(pdf-parse@1.1.1):
+  /@langchain/community@0.2.10(@pinecone-database/pinecone@2.2.2)(pdf-parse@1.1.1):
     resolution: {integrity: sha512-0aT932D1lGya/oSLF1xlCv4ywWKwxp2vNwEHdE96K9s862BKfXbvZhIll6vhjDBB/5VmgKt7XkvSq4tVitFqGg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -955,15 +952,15 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.6(langchain@0.2.3)(openai@4.10.0)
+      '@langchain/core': 0.2.6(langchain@0.2.3)
       '@langchain/openai': 0.1.3(langchain@0.2.3)
       '@pinecone-database/pinecone': 2.2.2
       binary-extensions: 2.2.0
       expr-eval: 2.0.2
       flat: 5.0.2
       js-yaml: 4.1.0
-      langchain: 0.2.3(@pinecone-database/pinecone@2.2.2)(openai@4.10.0)(pdf-parse@1.1.1)
-      langsmith: 0.1.31(@langchain/core@0.2.6)(langchain@0.2.3)(openai@4.10.0)
+      langchain: 0.2.3(@pinecone-database/pinecone@2.2.2)(pdf-parse@1.1.1)
+      langsmith: 0.1.31(@langchain/core@0.2.6)(langchain@0.2.3)
       pdf-parse: 1.1.1
       uuid: 9.0.1
       zod: 3.23.8
@@ -979,7 +976,7 @@ packages:
       - pyodide
     dev: false
 
-  /@langchain/core@0.2.6(langchain@0.0.153)(openai@4.10.0):
+  /@langchain/core@0.2.6(langchain@0.0.153):
     resolution: {integrity: sha512-YB9F0vdi/PcgBLSKtDwQ3gV6w4xVfk4ph0U43Okz2dAapKfBkVVB0rzr/afYUt/WHs864MuaO8uLN64egSDtIA==}
     engines: {node: '>=18'}
     dependencies:
@@ -987,7 +984,7 @@ packages:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.31(@langchain/core@0.2.6)(langchain@0.0.153)(openai@4.10.0)
+      langsmith: 0.1.31(@langchain/core@0.2.6)(langchain@0.0.153)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -1021,7 +1018,7 @@ packages:
       - openai
     dev: false
 
-  /@langchain/core@0.2.6(langchain@0.2.3)(openai@4.10.0):
+  /@langchain/core@0.2.6(langchain@0.2.3):
     resolution: {integrity: sha512-YB9F0vdi/PcgBLSKtDwQ3gV6w4xVfk4ph0U43Okz2dAapKfBkVVB0rzr/afYUt/WHs864MuaO8uLN64egSDtIA==}
     engines: {node: '>=18'}
     dependencies:
@@ -1029,7 +1026,7 @@ packages:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.31(@langchain/core@0.2.6)(langchain@0.2.3)(openai@4.10.0)
+      langsmith: 0.1.31(@langchain/core@0.2.6)(langchain@0.2.3)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -1063,11 +1060,11 @@ packages:
       - openai
     dev: false
 
-  /@langchain/groq@0.0.12(langchain@0.0.153)(openai@4.10.0):
+  /@langchain/groq@0.0.12(langchain@0.0.153):
     resolution: {integrity: sha512-qgrVBdUnK9Qe8fzMc9gmMPGzc/8swDYbQuHoqsZmeK7M3wxEPR60rKdZvbbkFzqn+1NdquyRTeVKSgihPCib5Q==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.6(langchain@0.0.153)(openai@4.10.0)
+      '@langchain/core': 0.2.6(langchain@0.0.153)
       '@langchain/openai': 0.0.34(langchain@0.0.153)
       groq-sdk: 0.3.3
       zod: 3.23.8
@@ -1078,11 +1075,11 @@ packages:
       - openai
     dev: false
 
-  /@langchain/mistralai@0.0.24(langchain@0.0.153)(openai@4.10.0):
+  /@langchain/mistralai@0.0.24(langchain@0.0.153):
     resolution: {integrity: sha512-rSABqabqA7WyNK3fCPLLwLGGW+Sb1O0MQ0N2e0S+D1VGmqPrZKfPtoS0/JRInUdmDJa7DyOpXQjBiX76EGyA0g==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.6(langchain@0.0.153)(openai@4.10.0)
+      '@langchain/core': 0.2.6(langchain@0.0.153)
       '@mistralai/mistralai': 0.4.0
       uuid: 9.0.1
       zod: 3.23.8
@@ -1135,11 +1132,11 @@ packages:
       - langchain
     dev: false
 
-  /@langchain/pinecone@0.0.7(langchain@0.0.153)(openai@4.10.0):
+  /@langchain/pinecone@0.0.7(langchain@0.0.153):
     resolution: {integrity: sha512-PQztQOjMyVSBz4AofpKMn619PyVVF6Gl0OJzubolZNUA4lbR3UR+kENEe81WD6RSbBy3K9brOfjDDYx1hmtqOw==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.6(langchain@0.0.153)(openai@4.10.0)
+      '@langchain/core': 0.2.6(langchain@0.0.153)
       '@pinecone-database/pinecone': 2.2.2
       flat: 5.0.2
       uuid: 9.0.1
@@ -1148,11 +1145,11 @@ packages:
       - openai
     dev: false
 
-  /@langchain/textsplitters@0.0.3(langchain@0.2.3)(openai@4.10.0):
+  /@langchain/textsplitters@0.0.3(langchain@0.2.3):
     resolution: {integrity: sha512-cXWgKE3sdWLSqAa8ykbCcUsUF1Kyr5J3HOWYGuobhPEycXW4WI++d5DhzdpL238mzoEXTi90VqfSCra37l5YqA==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.6(langchain@0.2.3)(openai@4.10.0)
+      '@langchain/core': 0.2.6(langchain@0.2.3)
       js-tiktoken: 1.0.12
     transitivePeerDependencies:
       - langchain
@@ -2452,7 +2449,7 @@ packages:
       humanize-ms: 1.2.1
     dev: false
 
-  /ai@3.1.35(openai@4.10.0)(react@18.2.0)(solid-js@1.8.17)(svelte@4.2.18)(vue@3.4.27)(zod@3.21.4):
+  /ai@3.1.35(react@18.2.0)(solid-js@1.8.17)(svelte@4.2.18)(vue@3.4.27)(zod@3.23.8):
     resolution: {integrity: sha512-kr0GAKe3HrUqk0SSII8MrOyBC/Lsglh37ayYrGzzEo3QQ0igriBdVTQed+8UYljbnYikEglbLfwXAzg3qH6u4g==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -2471,23 +2468,22 @@ packages:
         optional: true
     dependencies:
       '@ai-sdk/provider': 0.0.10
-      '@ai-sdk/provider-utils': 0.0.13(zod@3.21.4)
-      '@ai-sdk/react': 0.0.1(react@18.2.0)(zod@3.21.4)
-      '@ai-sdk/solid': 0.0.1(solid-js@1.8.17)(zod@3.21.4)
-      '@ai-sdk/svelte': 0.0.1(svelte@4.2.18)(zod@3.21.4)
-      '@ai-sdk/ui-utils': 0.0.1(zod@3.21.4)
-      '@ai-sdk/vue': 0.0.1(vue@3.4.27)(zod@3.21.4)
+      '@ai-sdk/provider-utils': 0.0.13(zod@3.23.8)
+      '@ai-sdk/react': 0.0.1(react@18.2.0)(zod@3.23.8)
+      '@ai-sdk/solid': 0.0.1(solid-js@1.8.17)(zod@3.23.8)
+      '@ai-sdk/svelte': 0.0.1(svelte@4.2.18)(zod@3.23.8)
+      '@ai-sdk/ui-utils': 0.0.1(zod@3.23.8)
+      '@ai-sdk/vue': 0.0.1(vue@3.4.27)(zod@3.23.8)
       eventsource-parser: 1.1.2
       json-schema: 0.4.0
       jsondiffpatch: 0.6.0
       nanoid: 3.3.6
-      openai: 4.10.0
       react: 18.2.0
       secure-json-parse: 2.7.0
       sswr: 2.1.0(svelte@4.2.18)
       svelte: 4.2.18
-      zod: 3.21.4
-      zod-to-json-schema: 3.22.5(zod@3.21.4)
+      zod: 3.23.8
+      zod-to-json-schema: 3.22.5(zod@3.23.8)
     transitivePeerDependencies:
       - solid-js
       - vue
@@ -4690,13 +4686,13 @@ packages:
       pdf-parse: 1.1.1
       uuid: 9.0.1
       yaml: 2.3.2
-      zod: 3.21.4
-      zod-to-json-schema: 3.21.4(zod@3.21.4)
+      zod: 3.23.8
+      zod-to-json-schema: 3.21.4(zod@3.23.8)
     transitivePeerDependencies:
       - encoding
     dev: false
 
-  /langchain@0.2.3(@pinecone-database/pinecone@2.2.2)(openai@4.10.0)(pdf-parse@1.1.1):
+  /langchain@0.2.3(@pinecone-database/pinecone@2.2.2)(pdf-parse@1.1.1):
     resolution: {integrity: sha512-T9xR7zd+Nj0oXy6WoYKmZLy0DlQiDLFPGYWdOXDxy+AvqlujoPdVQgDSpdqiOHvAjezrByAoKxoHCz5XMwTP/Q==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -4852,16 +4848,16 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.6(langchain@0.2.3)(openai@4.10.0)
+      '@langchain/core': 0.2.6(langchain@0.2.3)
       '@langchain/openai': 0.0.34(langchain@0.2.3)
-      '@langchain/textsplitters': 0.0.3(langchain@0.2.3)(openai@4.10.0)
+      '@langchain/textsplitters': 0.0.3(langchain@0.2.3)
       '@pinecone-database/pinecone': 2.2.2
       binary-extensions: 2.2.0
       js-tiktoken: 1.0.12
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
       langchainhub: 0.0.11
-      langsmith: 0.1.31(@langchain/core@0.2.6)(langchain@0.2.3)(openai@4.10.0)
+      langsmith: 0.1.31(@langchain/core@0.2.6)(langchain@0.2.3)
       ml-distance: 4.0.1
       openapi-types: 12.1.3
       p-retry: 4.6.2
@@ -4894,7 +4890,7 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /langsmith@0.1.31(@langchain/core@0.2.6)(langchain@0.0.153)(openai@4.10.0):
+  /langsmith@0.1.31(@langchain/core@0.2.6)(langchain@0.0.153):
     resolution: {integrity: sha512-G9zi+84RvUZ7UP/ZC0dx/9SYHk8Bhe9GywUeVBzEyt8M4QeU6FPWT7TEjDSqp/XuPJf5o59Z2QlmNJgMnpUd8Q==}
     peerDependencies:
       '@langchain/core': '*'
@@ -4908,11 +4904,10 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.6(langchain@0.0.153)(openai@4.10.0)
+      '@langchain/core': 0.2.6(langchain@0.0.153)
       '@types/uuid': 9.0.4
       commander: 10.0.1
       langchain: 0.0.153(@pinecone-database/pinecone@2.2.2)(pdf-parse@1.1.1)
-      openai: 4.10.0
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
@@ -4942,7 +4937,7 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /langsmith@0.1.31(@langchain/core@0.2.6)(langchain@0.2.3)(openai@4.10.0):
+  /langsmith@0.1.31(@langchain/core@0.2.6)(langchain@0.2.3):
     resolution: {integrity: sha512-G9zi+84RvUZ7UP/ZC0dx/9SYHk8Bhe9GywUeVBzEyt8M4QeU6FPWT7TEjDSqp/XuPJf5o59Z2QlmNJgMnpUd8Q==}
     peerDependencies:
       '@langchain/core': '*'
@@ -4956,11 +4951,10 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.6(langchain@0.2.3)(openai@4.10.0)
+      '@langchain/core': 0.2.6(langchain@0.2.3)
       '@types/uuid': 9.0.4
       commander: 10.0.1
-      langchain: 0.2.3(@pinecone-database/pinecone@2.2.2)(openai@4.10.0)(pdf-parse@1.1.1)
-      openai: 4.10.0
+      langchain: 0.2.3(@pinecone-database/pinecone@2.2.2)(pdf-parse@1.1.1)
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
@@ -4983,7 +4977,7 @@ packages:
       '@langchain/core': 0.2.6(langchain@0.2.3)(openai@4.51.0)
       '@types/uuid': 9.0.4
       commander: 10.0.1
-      langchain: 0.2.3(@pinecone-database/pinecone@2.2.2)(openai@4.10.0)(pdf-parse@1.1.1)
+      langchain: 0.2.3(@pinecone-database/pinecone@2.2.2)(pdf-parse@1.1.1)
       openai: 4.51.0
       p-queue: 6.6.2
       p-retry: 4.6.2
@@ -5887,22 +5881,6 @@ packages:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
-    dev: false
-
-  /openai@4.10.0:
-    resolution: {integrity: sha512-II4b5/7qzwYkqA9MSjgqdofCc798EW+dtF2h6qNaVLet+qO7FShAJTWnoyzb50J4ZH1rPxRFAsmDLIhY3PT6DQ==}
-    hasBin: true
-    dependencies:
-      '@types/node': 18.17.18
-      '@types/node-fetch': 2.6.5
-      abort-controller: 3.0.0
-      agentkeepalive: 4.5.0
-      digest-fetch: 1.3.0
-      form-data-encoder: 1.7.2
-      formdata-node: 4.4.1
-      node-fetch: 2.7.0(encoding@0.1.13)
-    transitivePeerDependencies:
-      - encoding
     dev: false
 
   /openai@4.4.0:
@@ -7521,20 +7499,20 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /zod-to-json-schema@3.21.4(zod@3.21.4):
+  /zod-to-json-schema@3.21.4(zod@3.23.8):
     resolution: {integrity: sha512-fjUZh4nQ1s6HMccgIeE0VP4QG/YRGPmyjO9sAh890aQKPEk3nqbfUXhMFaC+Dr5KvYBm8BCyvfpZf2jY9aGSsw==}
     peerDependencies:
       zod: ^3.21.4
     dependencies:
-      zod: 3.21.4
+      zod: 3.23.8
     dev: false
 
-  /zod-to-json-schema@3.22.5(zod@3.21.4):
+  /zod-to-json-schema@3.22.5(zod@3.23.8):
     resolution: {integrity: sha512-+akaPo6a0zpVCCseDed504KBJUQpEW5QZw7RMneNmKw+fGaML1Z9tUNLnHHAC8x6dzVRO1eB2oEMyZRnuBZg7Q==}
     peerDependencies:
       zod: ^3.22.4
     dependencies:
-      zod: 3.21.4
+      zod: 3.23.8
     dev: false
 
   /zod-to-json-schema@3.23.0(zod@3.23.8):

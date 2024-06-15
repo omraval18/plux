@@ -6,7 +6,6 @@ import {
 } from 'uploadthing/next'
 import { TogetherAIEmbeddings } from "@langchain/community/embeddings/togetherai";
 import { PDFLoader } from 'langchain/document_loaders/fs/pdf'
-import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
 import { PineconeStore } from '@langchain/pinecone'
 import { getPineconeClient } from '@/lib/pinecone'
 import { getUserSubscriptionPlan } from '@/lib/stripe'

@@ -10,7 +10,7 @@ import 'simplebar-react/dist/simplebar.min.css'
 
 import {Toaster} from "sonner"
 
-const bricolage = Bricolage_Grotesque({ subsets: ['latin'],variable: '--bricolage' })
+const bricolage = Bricolage_Grotesque({ subsets: ['latin'],variable: '--bricolage',display: 'swap' })
 const linden = Linden_Hill({ weight:"400",subsets: ['latin'],display: 'swap',variable: '--linden' })
 const maitree = Maitree({ subsets: ['latin'],display: 'swap',variable: '--maitree', weight:["400","500","600","700"] })
 export const metadata = constructMetadata()

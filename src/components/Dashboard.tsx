@@ -43,7 +43,6 @@ const Dashboard = ({subscriptionPlan}: PageProps) => {
 
   const { data: files, isLoading } =
     trpc.getUserFiles.useQuery()
-  console.log(files);
 
   const { mutate: deleteFile } =
     trpc.deleteFile.useMutation({

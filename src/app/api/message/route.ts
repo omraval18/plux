@@ -1,5 +1,4 @@
 import { db } from '@/db'
-import { openai } from '@/lib/openai'
 import { getPineconeClient } from '@/lib/pinecone'
 import { SendMessageValidator } from '@/lib/validators/SendMessageValidator'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
@@ -8,10 +7,7 @@ import { NextRequest } from 'next/server'
 import {  StreamingTextResponse } from 'ai'
 import { createOpenAI } from "@ai-sdk/openai";
 import { TogetherAIEmbeddings } from "@langchain/community/embeddings/togetherai";
-
-
 import { streamText } from "ai";
-import { Embeddings } from 'openai/resources/embeddings.mjs';
 
 export const POST = async (req: NextRequest) => {
   // endpoint for asking a question to a pdf file
