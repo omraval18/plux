@@ -135,7 +135,7 @@ const Page = () => {
                             </h3>
                             <p className="text-gray-500">{tagline}</p>
                             <p className="my-5 font-display text-3xl flex items-center gap-1 justify-center font-semibold">
-                                <p>₹</p>
+                                <p>$</p>
                                 <p className="text-7xl font-bold">{price}</p>
                             </p>
                             <p className="text-gray-500 text-center w-full">per month</p>

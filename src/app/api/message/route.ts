@@ -46,7 +46,6 @@ export const POST = async (req: NextRequest) => {
 
   // 1: vectorize message
 
-
   const embeddings = new TogetherAIEmbeddings({
       apiKey: process.env.TOGETHER_AI_API_KEY, // Default value
       model: "togethercomputer/m2-bert-80M-8k-retrieval", // Default value

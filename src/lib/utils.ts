@@ -8,8 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 
 export function absoluteUrl(path: string) {
   if (typeof window !== 'undefined') return path
-  if (process.env.VERCEL_URL)
-    return `https://${process.env.VERCEL_URL}${path}`
+  if (process.env.LIVE_URL)
+    return `https://${process.env.LIVE_URL}${path}`
   return `http://localhost:${
     process.env.PORT ?? 3000
   }${path}`
@@ -48,7 +48,7 @@ export function constructMetadata({
             creator: "@omraval18",
         },
         icons,
-        metadataBase: new URL("https://plux-jet.vercel.app"),
+        metadataBase: new URL("https://plux.onrender.com"),
         themeColor: "#FFF",
         ...(noIndex && {
             robots: {
