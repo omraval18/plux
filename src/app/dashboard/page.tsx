@@ -1,26 +1,27 @@
-import Dashboard from '@/components/Dashboard'
-import { db } from '@/db'
-import { getUserSubscriptionPlan } from '@/lib/stripe'
-import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
-import { redirect } from 'next/navigation'
+"use client";
 
-const Page = async () => {
-  const { getUser } = getKindeServerSession()
-  const user = getUser()
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
-  if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
+const DashboardContent = dynamic(() => import("@/components/DashboardWrapper"), {
+    ssr: false,
+    loading: () => (
+        <div className="flex items-center justify-center min-h-screen">
+            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900"></div>
+        </div>
+    ),
+});
 
-  const dbUser = await db.user.findFirst({
-    where: {
-      id: user.id
-    }
-  })
-
-  if(!dbUser) redirect('/auth-callback?origin=dashboard')
-
-  const subscriptionPlan = await getUserSubscriptionPlan()
-
-  return <Dashboard subscriptionPlan={subscriptionPlan} />
+export default function Page() {
+    return (
+        <Suspense
+            fallback={
+                <div className="flex items-center justify-center min-h-screen">
+                    <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900"></div>
+                </div>
+            }
+        >
+            <DashboardContent />
+        </Suspense>
+    );
 }
-
-export default Page

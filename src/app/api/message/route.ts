@@ -75,7 +75,7 @@ export const POST = async (req: NextRequest) => {
         // console.log("Creating embeddings...");
         const embeddings = new TogetherAIEmbeddings({
             apiKey: process.env.TOGETHER_AI_API_KEY,
-            model: "togethercomputer/m2-bert-80M-8k-retrieval",
+            model: "togethercomputer/m2-bert-80M-32k-retrieval",
         });
 
         // console.log("Connecting to Pinecone...");
